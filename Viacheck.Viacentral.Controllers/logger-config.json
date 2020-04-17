@@ -1,6 +1,6 @@
 {
-    "awsApiKey": "AKIAIOEQAOBJI7GHR5FA",
-    "awsSecretKey": "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",
+    "awsApiKey": "",
+    "awsSecretKey": "",
     "region": "us-east-1",
-    "logGroup" : "Viam-Viacheck-ViacheckApi-Giact"
+    "logGroup" : ""
 }
