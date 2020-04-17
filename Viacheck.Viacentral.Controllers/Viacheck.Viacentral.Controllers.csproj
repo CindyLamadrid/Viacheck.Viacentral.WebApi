@@ -1,0 +1,40 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.3" />
+	<PackageReference Include="NLog" Version="4.5.0" />
+    <PackageReference Include="AWSSDK.Core" Version="3.3.31.12" />
+    <PackageReference Include="AWSSDK.CloudWatchLogs" Version="3.3.4" />
+    <PackageReference Include="Microsoft.AspNetCore.Cors" Version="2.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Viacheck.Viacentral.Business\Viacheck.Viacentral.Business.csproj" />
+    <ProjectReference Include="..\Viacheck.Viacentral.Models\Viacheck.Viacentral.Models.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Libraries\" />
+    <Folder Include="Constants\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="AWS.Logger.Core">
+      <HintPath>..\..\Viam.Viacentral.WebApi\Viam.Viacentral.Controllers\Libraries\AWS.Logger.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="NLog.AWS.Logger">
+      <HintPath>..\..\Viam.Viacentral.WebApi\Viam.Viacentral.Controllers\Libraries\NLog.AWS.Logger.dll</HintPath>
+    </Reference>
+    <Reference Include="Viam.Framework.Logger">
+      <HintPath>..\..\Viam.Viacentral.WebApi\Viam.Viacentral.Controllers\Libraries\Viam.Framework.Logger.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
